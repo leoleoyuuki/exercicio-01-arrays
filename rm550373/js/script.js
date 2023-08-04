@@ -15,6 +15,7 @@ adicionaFim.addEventListener("click", ()=>{
     tarefas.push(novaTarefa);
 
     for (let i = 0 ; i < tarefas.length ; i++){
+        tarefas[i] = '-' + tarefas[i];
         let lista = document.querySelector('.lista').innerHTML = tarefas.join("<br/>");
 
     }
